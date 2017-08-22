@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Barcode Generator</title>
+</head>
+<body>
+<h2>Barcode Generator</h2>
+
+<form action="/barcodegenerator/upload" 
+enctype="multipart/form-data" method="post">
+Insert a location that you want to transform into a barcode:<br>
+   <input type = "text" name = "location">
+<p>
+Or insert a list of locations to be transformed into barcodes:<br>
+<input type="file" name="datafile" size="40">
+</p>
+Or copy-paste one or more locations below to be transformed into barcodes:<br/>
+<textarea name="pasted_locations" rows="10" cols="17"></textarea>
+<div>
+<input type="submit" value="Generate">
+</div>
+</form>
+<p><label>
+</label></p>
+</body>
+</html>

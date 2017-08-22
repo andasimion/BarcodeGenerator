@@ -1,0 +1,10 @@
+  {% for entry in entries %}
+<img src="/barcodegenerator?location={{ entry }}">
+  {% endfor %}
+  
+
+{% if invalid_locations|length > 0 %}
+     <h1> {{ entries|length }} locations have been succesfully transformed into barcodes. {{ invalid_locations}} locations are invalid </h1>
+{% else %}
+     <h1> All locations have been successfully transformed into barcodes </h1>
+{% endif %}
